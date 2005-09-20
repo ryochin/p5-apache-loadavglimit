@@ -1,0 +1,10 @@
+Revision history for Perl extension Apache::LoadAvgLimit.
+
+0.02  Tue Mar 25 12:27:45 JST 2003
+	+ add LoadAvgRetryAfter directive.
+
+0.01  Sun Jan  5 13:16:58 JST 2003
+	* first release.
+
+0.001  Thu Dec 19 02:34:45 JST 2002
+	* first alpha release.
