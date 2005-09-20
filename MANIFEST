@@ -1,0 +1,14 @@
+Changes
+LoadAvgLimit.pm
+MANIFEST
+Makefile.PL
+README
+GetAvg/Changes
+GetAvg/GetAvg.pm
+GetAvg/GetAvg.pm.uptime
+GetAvg/GetAvg.xs
+GetAvg/MANIFEST
+GetAvg/Makefile.PL
+loadavg_bench.pl
+t/01_use.t
+t/02_get_avg.t.off
