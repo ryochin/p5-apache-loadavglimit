@@ -6,7 +6,7 @@ use Apache;
 use Apache::Constants qw(:common HTTP_SERVICE_UNAVAILABLE);
 use Apache::LoadAvgLimit::GetAvg;
 
-$VERSION = '0.04_01';
+$VERSION = '0.03_01';
 
 sub handler {
     my $r = shift;
