@@ -3,7 +3,7 @@ use ExtUtils::MakeMaker;
 # the contents of the Makefile that is written.
 WriteMakefile(
     'NAME'	=> 'Apache::LoadAvgLimit',
-    'VERSION_FROM' => 'LoadAvgLimit.pm', # finds $VERSION
+    'VERSION_FROM' => 'lib/Apache/LoadAvgLimit.pm', # finds $VERSION
     'LIBS'	=> [''],   # e.g., '-lm' 
     'DEFINE'	=> '',     # e.g., '-DHAVE_SOMETHING' 
     'INC'	=> '',     # e.g., '-I/usr/include/other' 
