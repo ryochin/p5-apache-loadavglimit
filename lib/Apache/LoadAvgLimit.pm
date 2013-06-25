@@ -72,7 +72,7 @@ __END__
 
 =head1 NAME
 
-Apache::LoadAvgLimit - limiting client request by system CPU load-averages
+Apache::LoadAvgLimit - limiting client request by system CPU load-averages (deprecated)
 
 =head1 SYNOPSIS
 
@@ -92,6 +92,26 @@ Apache::LoadAvgLimit - limiting client request by system CPU load-averages
     PerlSetVar LoadAvgLimit_15 1.50
     PerlSetVar LoadAvgRetryAfter 120
   </Location>
+
+=head1 CAUTION
+
+B<THIS MODULE IS MARKED AS DEPRECATED.>
+
+The module may still work for you, but consider switch to psgi like below:
+
+  use Plack::Builder;
+  use HTTP::Exception;
+  use Sys::Load;
+
+  builder {
+      enable 'HTTPExceptions';
+      enable_if { (Sys::Load::getload())[0] > 3.00 }
+          sub { sub { HTTP::Exception::503->throw } };
+
+      $app;
+  };
+
+You can run mod_perl1 application as psgi with L<Plack::Handler::Apache1>.
 
 =head1 DESCRIPTION
 

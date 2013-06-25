@@ -1,5 +1,5 @@
 {
-   "abstract" : "limiting client request by system CPU load-averages",
+   "abstract" : "limiting client request by system CPU load-averages (deprecated)",
    "author" : [
       "Ryo Okamoto <ryo@aquahill.net>"
    ],
