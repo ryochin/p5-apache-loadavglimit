@@ -10,7 +10,7 @@ require AutoLoader;
 @ISA = qw(Exporter DynaLoader);
 @EXPORT_OK = qw( get_loadavg );
 
-$VERSION = '0.01';
+$VERSION = '0.03';
 
 bootstrap Apache::LoadAvgLimit::GetAvg $VERSION;
 

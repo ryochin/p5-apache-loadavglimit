@@ -6,7 +6,7 @@ use Apache;
 use Apache::Constants qw(:common HTTP_SERVICE_UNAVAILABLE);
 use Apache::LoadAvgLimit::GetAvg;
 
-$VERSION = '0.03_01';
+$VERSION = '0.03';
 
 sub handler {
     my $r = shift;
@@ -68,7 +68,7 @@ sub handler {
 1;
 __END__
 
-=pod
+=encoding utf-8
 
 =head1 NAME
 
@@ -124,12 +124,26 @@ automatically set.
 
 =head1 AUTHOR
 
-Okamoto RYO <ryo@aquahill.net>
+Ryo Okamoto E<lt>ryo@aquahill.netE<gt>
 
 =head1 SEE ALSO
 
 mod_perl(3), Apache(3), getloadavg(3), uptime(1), RFC1945, RFC2616, 
 mod_loadavg
 
-=cut
+=head1 REPOSITORY
 
+https://github.com/ryochin/p5-apache-loadavglimit
+
+=head1 AUTHOR
+
+Ryo Okamoto E<lt>ryo@aquahill.netE<gt>
+
+=head1 COPYRIGHT & LICENSE
+
+Copyright (c) Ryo Okamoto, all rights reserved.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
+=cut
